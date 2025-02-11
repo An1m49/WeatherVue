@@ -3,7 +3,7 @@ import HomePage from '@/views/HomePage.vue';
 </script>
 
 <template>
-    <div class="min-h-screen">
+    <div class="min-h-screen bg-[#4b6fdb]">
         <HomePage/>
     </div>
 </template>
