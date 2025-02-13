@@ -1,0 +1,1 @@
+export const extractTime = (time: string): string => time.slice(10);

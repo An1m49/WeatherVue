@@ -1,8 +1,12 @@
 <script setup lang="ts">
 defineProps({
     degrees: {
-        type: String,
-        default: '999'
+        type: Number,
+        default: 999
+    },
+    feelslike: {
+        type: Number,
+        default: 999
     },
     condition: {
         type: String,
@@ -18,7 +22,7 @@ defineProps({
 <template>
     <div class="flex items-center gap-6">
         <div class="">
-            <p>{{ degrees }}°</p>
+            <p>{{ degrees }}° (ощущается как {{feelslike}}°)</p>
             <p>{{ condition }}</p>
         </div>
         <img :src="icon" alt="Иконка погоды">
